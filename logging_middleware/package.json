@@ -1,0 +1,7 @@
+{
+  "name": "logging_middleware",
+  "version": "1.0.0",
+  "description": "reusable log sender for affordmed evaluation apps",
+  "main": "index.js",
+  "license": "ISC"
+}
