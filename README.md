@@ -1,34 +1,5 @@
 # Campus Hiring Evaluation — Backend
-
-Node.js / Express submission. All apps use the logging middleware from `logging_middleware/`.
-
-## Structure
-
-```
-logging_middleware/             shared log module
-vehicle_maintence_scheduler/    port 4000 — knapsack scheduling
-notification_app_be/            port 5000 — notification REST API
-notification_system_design.md   stages 1–6 design answers
-```
-
-## Run
-
-```bash
-# Vehicle scheduler
-cd vehicle_maintence_scheduler
-cp .env.example .env   # add AUTH_TOKEN
-npm install && npm start
-
-# Notification app (new terminal)
-cd notification_app_be
-cp .env.example .env   # add AUTH_TOKEN
-npm install && npm start
-```
-
-Token expires every 15 min. Refresh via the auth endpoint.
-
----
-
+## (all api response are attached below)
 ## Vehicle Maintenance Scheduler
 
 **Port:** 4000
@@ -107,3 +78,33 @@ In-memory cache (30s TTL), read-state tracking, filtering, pagination, priority 
 ## Design Doc
 
 `notification_system_design.md` — stages 1 through 6.
+
+
+Node.js / Express submission. All apps use the logging middleware from `logging_middleware/`.
+
+## Structure
+
+```
+logging_middleware/             shared log module
+vehicle_maintence_scheduler/    port 4000 — knapsack scheduling
+notification_app_be/            port 5000 — notification REST API
+notification_system_design.md   stages 1–6 design answers
+```
+
+## Run
+
+```bash
+# Vehicle scheduler
+cd vehicle_maintence_scheduler
+cp .env.example .env   # add AUTH_TOKEN
+npm install && npm start
+
+# Notification app (new terminal)
+cd notification_app_be
+cp .env.example .env   # add AUTH_TOKEN
+npm install && npm start
+```
+
+Token expires every 15 min. Refresh via the auth endpoint.
+
+---
